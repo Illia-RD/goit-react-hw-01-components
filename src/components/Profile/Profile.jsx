@@ -41,4 +41,3 @@ Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
 };
-//

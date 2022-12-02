@@ -5,10 +5,10 @@ export const Statistics = ({ title, stats }) => {
     <section class="statistics">
       {title && <h2 class="title"> Upload stats</h2>}
       <ul class="stat-list">
-        {stats.map(elm => (
-          <li>
-            <span class="label">{elm.label}</span>
-            <span class="quantity">{elm.percentage}%</span>
+        {stats.map(({ id, label, percentage }) => (
+          <li key={id}>
+            <span class="label">{label}</span>
+            <span class="quantity">{percentage}%</span>
           </li>
         ))}
       </ul>
