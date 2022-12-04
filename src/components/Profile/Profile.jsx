@@ -1,37 +1,19 @@
 import PropTypes from 'prop-types';
-export const Profile = ({
-  user: {
-    username,
-    tag,
-    location,
-    avatar,
-    stats: { followers, views, likes },
-  },
-}) => {
+import { Description } from './Description/Description';
+import { Stats } from './Stats/Stats';
+import { Wrap } from './Profile.styled';
+import { Section } from 'components/Utils/Section';
+import { Container } from 'components/Utils/Container';
+export const Profile = ({ user }) => {
   return (
-    <div class="profile">
-      <div class="description">
-        <img src={avatar} alt={avatar} class="avatar" />
-        <p class="name">{username}</p>
-        <p class="tag">{tag}</p>
-        <p class="location">{location}</p>
-      </div>
-
-      <ul class="stats">
-        <li>
-          <span class="label">Followers</span>
-          <span class="quantity">{followers}</span>
-        </li>
-        <li>
-          <span class="label">Views</span>
-          <span class="quantity">{views}</span>
-        </li>
-        <li>
-          <span class="label">Likes</span>
-          <span class="quantity">{likes}</span>
-        </li>
-      </ul>
-    </div>
+    <Section>
+      <Container>
+        <Wrap>
+          <Description user={user} />
+          <Stats user={user} />
+        </Wrap>
+      </Container>
+    </Section>
   );
 };
 Profile.propTypes = {
