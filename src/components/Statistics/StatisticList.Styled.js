@@ -6,7 +6,7 @@ export const List = styled.ul`
   flex-wrap: wrap;
   gap: 1px;
 `;
-export const StatsElement = styled.li`
+export const Stats = styled.li`
   padding: 10px 15px;
   display: flex;
   flex-direction: column;

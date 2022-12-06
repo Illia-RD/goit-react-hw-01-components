@@ -1,7 +1,6 @@
-import { Section } from 'components/Utils/Section';
 import styled from 'styled-components';
 
-export const FriendsSection = styled(Section)`
+export const Wrap = styled.div`
   display: flex;
   justify-content: center;
 `;

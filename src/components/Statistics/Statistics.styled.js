@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-export const Wrap = styled.div`
+export const Box = styled.div`
   max-width: 320px;
   background-color: #ffffff;
   margin: 0 auto;

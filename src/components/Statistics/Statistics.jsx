@@ -1,15 +1,15 @@
 import { Section } from 'components/Utils/Section';
 import PropTypes from 'prop-types';
 import { StatisticList } from './StatisticList';
-import { Title, Wrap } from './Statistics.styled';
+import { Title, Box } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Wrap>
+      <Box>
         {title && <Title> {title}</Title>}
         <StatisticList stats={stats} />
-      </Wrap>
+      </Box>
     </Section>
   );
 };
