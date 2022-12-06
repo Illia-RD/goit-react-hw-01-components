@@ -1,16 +1,15 @@
-import { Container } from 'components/Utils/Container';
 import { Section } from 'components/Utils/Section';
 import PropTypes from 'prop-types';
 import { StatisticList } from './StatisticList';
-import { Title } from './Statistics.styled';
+import { Title, Wrap } from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
     <Section>
-      <Container>
+      <Wrap>
         {title && <Title> {title}</Title>}
         <StatisticList stats={stats} />
-      </Container>
+      </Wrap>
     </Section>
   );
 };

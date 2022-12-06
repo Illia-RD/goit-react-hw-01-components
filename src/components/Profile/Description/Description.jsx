@@ -8,9 +8,9 @@ import {
 export const Description = ({ user: { avatar, username, tag, location } }) => {
   return (
     <DescriptionWrap>
-      <Avatar src={avatar} alt={username} />
+      <Avatar src={avatar} alt={username} width="100px" />
       <Name>{username}</Name>
-      <Tag>{tag}</Tag>
+      <Tag>@{tag}</Tag>
       <Location>{location}</Location>
     </DescriptionWrap>
   );

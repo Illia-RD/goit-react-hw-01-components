@@ -1,18 +1,15 @@
 import PropTypes from 'prop-types';
 import { Description } from './Description/Description';
 import { Stats } from './Stats/Stats';
-import { Wrap } from './Profile.styled';
+import { Card } from './Profile.styled';
 import { Section } from 'components/Utils/Section';
-import { Container } from 'components/Utils/Container';
 export const Profile = ({ user }) => {
   return (
     <Section>
-      <Container>
-        <Wrap>
-          <Description user={user} />
-          <Stats user={user} />
-        </Wrap>
-      </Container>
+      <Card>
+        <Description user={user} />
+        <Stats user={user} />
+      </Card>
     </Section>
   );
 };

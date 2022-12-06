@@ -5,7 +5,11 @@ import {
   StatsQuantity,
 } from './Stats.styled';
 
-export const Stats = ({ user: { followers, views, likes } }) => {
+export const Stats = ({
+  user: {
+    stats: { followers, views, likes },
+  },
+}) => {
   return (
     <StatsList>
       <StatsItem>
