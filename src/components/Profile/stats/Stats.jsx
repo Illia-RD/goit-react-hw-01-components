@@ -3,7 +3,7 @@ import {
   StatsLabel,
   StatsList,
   StatsQuantity,
-} from './Stats.styled';
+} from '../Stats.styled';
 
 export const Stats = ({
   user: {
