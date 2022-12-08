@@ -1,11 +1,11 @@
-import { TDataBody } from './TableBody.Styled';
+import { TData } from 'components/Utils/TableData';
 
 export const TableBody = ({ item: { type, amount, currency } }) => {
   return (
     <>
-      <TDataBody>{type}</TDataBody>
-      <TDataBody>{amount}</TDataBody>
-      <TDataBody>{currency}</TDataBody>
+      <TData>{type}</TData>
+      <TData>{amount}</TData>
+      <TData>{currency}</TData>
     </>
   );
 };

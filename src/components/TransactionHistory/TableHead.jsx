@@ -1,11 +1,11 @@
-import { TDataHead } from './TableHead.styled';
+import { TData } from 'components/Utils/TableData';
 
 export const TableHead = () => {
   return (
     <>
-      <TDataHead>Type</TDataHead>
-      <TDataHead>Amount</TDataHead>
-      <TDataHead>Currency</TDataHead>
+      <TData>Type</TData>
+      <TData>Amount</TData>
+      <TData>Currency</TData>
     </>
   );
 };
