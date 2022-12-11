@@ -6,7 +6,7 @@ export const Friend = ({ friend: { avatar, name, isOnline } }) => {
     <>
       <Status
         style={{ backgroundColor: isOnline === true ? 'green' : 'red' }}
-      ></Status>
+      />
       <Avatar src={avatar} alt={name} width="48" />
       <Nickname>{name}</Nickname>
     </>
