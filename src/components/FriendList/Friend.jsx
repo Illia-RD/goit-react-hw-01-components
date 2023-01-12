@@ -10,6 +10,7 @@ export const Friend = ({ friend: { avatar, name, isOnline } }) => {
       <Avatar src={avatar} alt={name} width="48" />
       <Nickname>{name}</Nickname>
     </>
+    
   );
 };
 Friend.propTypes = {
